@@ -3,8 +3,496 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/HeaderUser.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="CSS/FooterUser.css">
 
+</head>
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <div>PHONE REPAIR</div>
+        </div>
+        <div class="nav-left">
+            <div class="search-bar">
+                <input type="text" placeholder="Bạn cần tìm?">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="#"> <i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="cart-count">0</span></a>
+            <a href="#"> <i class="fas fa-cog"></i> Cài đặt</a>
+            <a href="#"> <i class="fas fa-user"></i> Login</a>
+        </div>
+    </div>
+    <div class="sub-navbar">
+        <a href="../index.html"><i class="fas fa-home"></i> TRANG CHỦ</a>
+        <a href="#" style="color: #FF6A00"> <i class="fas fa-star" style="color: #FF6A00"></i> SẢN PHẨM THEO HÃNG</a>
+        <a href="#"> <i class="fas fa-tools"></i> LỖI THIẾT BỊ</a>
+        <a href="#"><i class="fas fa-shield-alt"></i> CHÍNH SÁCH BẢO HÀNH</a>
+        <a href="#"><i class="fas fa-calendar-alt"></i> ĐẶT LỊCH</a>
+    </div>
+</header>
+
+<body>
+<div class="container">
+    <div class="sidebar">
+        <h4>Chọn hãng điện thoại</h4>
+        <select id="brandSelect" onchange="filterProducts()">
+            <option value="">Chọn hãng</option>
+            <option value="iphone">IPhone</option>
+            <option value="samsung">Samsung</option>
+        </select>
+
+        <div id="accessorySelectContainer" style="display: none; margin-top: 20px;">
+            <h4>Chọn dòng sản phẩm iPhone</h4>
+            <select id="accessorySelect" onchange="filterAccessories('iphone')">
+                <option value="">Chọn dòng sản phẩm</option>
+                <option value="iphoneX">IPhone X</option>
+                <option value="iphone12">IPhone 12</option>
+            </select>
+
+            <h4 style="margin-top: 20px;">Chọn lỗi sản phẩm</h4>
+            <select id="iphoneIssues" style="display: none;" onchange="filterIssues('iphone')">
+                <option value="">Chọn lỗi</option>
+                <option value="battery">Chai Pin</option>
+                <option value="screen">Màn hình</option>
+            </select>
+        </div>
+
+        <div id="samsungAccessorySelectContainer" style="display: none; margin-top: 20px;">
+            <h4>Chọn phụ kiện Samsung</h4>
+            <select id="samsungAccessorySelect" onchange="filterAccessories('samsung')">
+                <option value="">Chọn phụ kiện</option>
+                <option value="samsungGalaxyAccessory">Samsung Galaxy S25</option>
+                <option value="samsungNoteAccessory">Samsung Galaxy M15</option>
+            </select>
+
+            <h4 style="margin-top: 20px;">Chọn lỗi sản phẩm</h4>
+            <select id="samsungIssues" style="display: none;" onchange="filterIssues('samsung')">
+                <option value="">Chọn lỗi</option>
+                <option value="battery">Chai Pin</option>
+                <option value="screen">Màn hình</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="product-listing">
+        <!-- iPhone Products -->
+        <div class="product-group" id="iphoneProducts" style="display: none;">
+            <div class="product">
+                <img src="../img/thayloa.png" alt="iPhone 3" class="product-image">
+                <h3>iPhone 3</h3>
+                <p>Giá: 440,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../img/thayloa.png" alt="iPhone 11" class="product-image">
+                <h3>iPhone 11</h3>
+                <p>Giá: 900,000₫</p>
+                <p>Giảm giá 10% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../img/thayloa.png" alt="iPhone 12 Pro" class="product-image">
+                <h3>iPhone 12 Pro</h3>
+                <p>Giá: 1,200,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Samsung Products -->
+        <div class="product-group" id="samsungProducts" style="display: none;">
+            <div class="product">
+                <img src="../img/thayloa.png" alt="Samsung Galaxy" class="product-image">
+                <h3>Samsung Galaxy S23</h3>
+                <p>Giá: 500,000₫</p>
+                <p>Giảm giá 10% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../img/thayloa.png" alt="Samsung Note" class="product-image">
+                <h3>Samsung Galaxy M15</h3>
+                <p>Giá: 600,000₫</p>
+                <p>Giảm giá 12% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- iPhone Accessories -->
+        <div class="product-group" id="iphoneXAccessories" style="display: none;">
+            <div class="product">
+                <img src="../img/thayloa.png" alt="Ốp lưng iPhone X" class="product-image">
+                <h3>Ốp lưng iPhone X</h3>
+                <p>Giá: 100,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../img/thayloa.png" alt="Màn hình iPhone X" class="product-image">
+                <h3>Màn hình iPhone X</h3>
+                <p>Giá: 300,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../img/thayloa.png" alt="Cáp sạc iPhone X" class="product-image">
+                <h3>Cáp sạc iPhone X</h3>
+                <p>Giá: 50,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-group" id="iphone12Accessories" style="display: none;">
+            <div class="product">
+                <img src="../img/thayloa.png" alt="Ốp lưng iPhone 12" class="product-image">
+                <h3>Ốp lưng iPhone 12</h3>
+                <p>Giá: 120,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+            <div class="product">
+                <img src="../img/thayloa.png" alt="Cáp sạc iPhone 12" class="product-image">
+                <h3>Cáp sạc iPhone 12</h3>
+                <p>Giá: 50,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Issues for iPhone X -->
+        <div class="product-group" id="iphoneXBatteryIssues" style="display: none;">
+            <div class="product" data-name="Pin iPhone X">
+                <img src="../img/thayloa.png" alt="Pin iPhone X" class="product-image">
+                <h3>Pin iPhone X</h3>
+                <p>Giá: 250,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-group" id="iphoneXScreenIssues" style="display: none;">
+            <div class="product" data-name="Màn hình iPhone X thay thế">
+                <img src="../img/thayloa.png" alt="Màn hình iPhone X thay thế" class="product-image">
+                <h3>Màn hình iPhone X</h3>
+                <p>Giá: 600,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Issues for iPhone 12 -->
+        <div class="product-group" id="iphone12BatteryIssues" style="display: none;">
+            <div class="product" data-name="Pin iPhone 12">
+                <img src="../img/thayloa.png" alt="Pin iPhone 12" class="product-image">
+                <h3>Pin iPhone 12</h3>
+                <p>Giá: 300,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-group" id="iphone12ScreenIssues" style="display: none;">
+            <div class="product" data-name="Màn hình iPhone 12 thay thế">
+                <img src="../img/thayloa.png" alt="Màn hình iPhone 12 thay thế" class="product-image">
+                <h3>Màn hình iPhone 12</h3>
+                <p>Giá: 700,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Samsung Galaxy S25 Accessories -->
+        <div class="product-group" id="samsungGalaxyAccessories" style="display: none;">
+            <div class="product" data-name="Ốp lưng Galaxy S25">
+                <img src="../img/thayloa.png" alt="Ốp lưng Galaxy S25" class="product-image">
+                <h3>Ốp Galaxy S25</h3>
+                <p>Giá: 110,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+            <div class="product" data-name="Màn hình Galaxy S25">
+                <img src="../img/thayloa.png" alt="Màn hình Galaxy S25" class="product-image">
+                <h3>Màn hình Galaxy S25</h3>
+                <p>Giá: 400,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Issues for Samsung Galaxy S25 -->
+        <div class="product-group" id="samsungGalaxyBatteryIssues" style="display: none;">
+            <div class="product" data-name="Pin Galaxy S25">
+                <img src="../img/thayloa.png" alt="Pin Galaxy S25" class="product-image">
+                <h3>Pin Galaxy S25</h3>
+                <p>Giá: 250,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-group" id="samsungGalaxyScreenIssues" style="display: none;">
+            <div class="product" data-name="Màn hình Galaxy S25 thay thế">
+                <img src="../img/thayloa.png" alt="Màn hình Galaxy S25 thay thế" class="product-image">
+                <h3>Màn hình Galaxy S25</h3>
+                <p>Giá: 600,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Samsung Galaxy M15 Accessories -->
+        <div class="product-group" id="samsungM15Accessory" style="display: none;">
+            <div class="product" data-name="Ốp lưng Samsung Galaxy M15">
+                <img src="../img/thayloa.png" alt="Ốp lưng Samsung Galaxy M15" class="product-image">
+                <h3>Ốp Samsung Galaxy M15</h3>
+                <p>Giá: 80,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+            <div class="product" data-name="Cáp sạc Samsung Galaxy M15">
+                <img src="../img/thayloa.png" alt="Cáp sạc Samsung Galaxy M15" class="product-image">
+                <h3>Sạc Samsung Galaxy M15</h3>
+                <p>Giá: 50,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Issues for Samsung Galaxy S25 -->
+        <div class="product-group" id="samsungGalaxyM15BatteryIssues" style="display: none;">
+            <div class="product" data-name="Pin Galaxy M15">
+                <img src="../img/thayloa.png" alt="Pin Galaxy M15" class="product-image">
+                <h3>Pin Galaxy M15</h3>
+                <p>Giá: 250,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="product-group" id="samsungGalaxyM15ScreenIssues" style="display: none;">
+            <div class="product" data-name="Màn hình Galaxy M15 thay thế">
+                <img src="../img/thayloa.png" alt="Màn hình Galaxy M15 thay thế" class="product-image">
+                <h3>Màn hình Galaxy M15</h3>
+                <p>Giá: 600,000₫</p>
+                <p>Giảm giá 15% khi mua phụ kiện</p>
+                <div class="viewProduct">
+                    <a href="#" class="btn">Xem</a>
+                    <a href="#" class="btn">Thêm giỏ hàng</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+    function filterProducts() {
+        const brandSelect = document.getElementById('brandSelect');
+        const selectedBrand = brandSelect.value;
+
+        // Ẩn tất cả các nhóm sản phẩm
+        document.querySelectorAll('.product-group').forEach(group => group.style.display = 'none');
+        document.getElementById('accessorySelectContainer').style.display = 'none';
+        document.getElementById('samsungAccessorySelectContainer').style.display = 'none';
+
+        if (selectedBrand === 'iphone') {
+            document.getElementById('iphoneProducts').style.display = 'flex'; // Đặt thành flex
+            document.getElementById('accessorySelectContainer').style.display = 'block';
+        } else if (selectedBrand === 'samsung') {
+            document.getElementById('samsungProducts').style.display = 'flex'; // Đặt thành flex
+            document.getElementById('samsungAccessorySelectContainer').style.display = 'block';
+        }
+    }
+
+
+    function filterAccessories(brand) {
+        const accessorySelect = document.getElementById(brand === 'iphone' ? 'accessorySelect' : 'samsungAccessorySelect');
+        const selectedAccessory = accessorySelect.value;
+
+        // Hide all accessory groups initially
+        document.querySelectorAll('.product-group').forEach(group => group.style.display = 'none');
+
+        if (brand === 'iphone') {
+            if (selectedAccessory === 'iphoneX') {
+                document.getElementById('iphoneXAccessories').style.display = 'flex';
+            } else if (selectedAccessory === 'iphone12') {
+                document.getElementById('iphone12Accessories').style.display = 'flex';
+            }
+            document.getElementById('iphoneIssues').style.display = 'flex';
+        } else if (brand === 'samsung') {
+            if (selectedAccessory === 'samsungGalaxyAccessory') {
+                document.getElementById('samsungGalaxyAccessories').style.display = 'flex';
+            }else if (selectedAccessory === 'samsungNoteAccessory') {
+                document.getElementById('samsungM15Accessory').style.display = 'flex';
+            }
+            document.getElementById('samsungIssues').style.display = 'flex';
+        }
+    }
+
+    function filterIssues(brand) {
+        const selectedAccessory = document.getElementById(brand === 'iphone' ? 'accessorySelect' : 'samsungAccessorySelect').value;
+        const issuesSelect = brand === 'iphone' ? document.getElementById('iphoneIssues') : document.getElementById('samsungIssues');
+        const selectedIssue = issuesSelect.value;
+
+        // Hide all issue product groups initially
+        document.querySelectorAll('.product-group').forEach(group => group.style.display = 'none');
+
+        if (brand === 'iphone') {
+            if (selectedAccessory === 'iphoneX') {
+                if (selectedIssue === 'battery') {
+                    document.getElementById('iphoneXBatteryIssues').style.display = 'flex';
+                } else if (selectedIssue === 'screen') {
+                    document.getElementById('iphoneXScreenIssues').style.display = 'flex';
+                }
+            } else if (selectedAccessory === 'iphone12') {
+                if (selectedIssue === 'battery') {
+                    document.getElementById('iphone12BatteryIssues').style.display = 'flex';
+                } else if (selectedIssue === 'screen') {
+                    document.getElementById('iphone12ScreenIssues').style.display = 'flex';
+                }
+            }
+        } else if (brand === 'samsung') {
+            if (selectedAccessory === 'samsungGalaxyAccessory') {
+                if (selectedIssue === 'battery') {
+                    document.getElementById('samsungGalaxyBatteryIssues').style.display = 'flex';
+                } else if (selectedIssue === 'screen') {
+                    document.getElementById('samsungGalaxyScreenIssues').style.display = 'flex';
+                }
+            } else if (selectedAccessory === 'samsungNoteAccessory') {
+                if (selectedIssue === 'battery') {
+                    document.getElementById('samsungGalaxyM15BatteryIssues').style.display = 'flex';
+                } else if (selectedIssue === 'screen') {
+                    document.getElementById('samsungGalaxyM15ScreenIssues').style.display = 'flex';
+                }
+            }
+        }
+    }
+
+</script>
 </body>
+
+<footer>
+
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="logo">
+                <div>PHONE REPAIR</div>
+            </div>
+            <ul>
+                <li><i class="fas fa-phone-alt"></i> Tổng đài miễn phí: <strong>1800 2057</strong></li>
+                <li><i class="fas fa-phone-alt"></i> Phản ánh dịch vụ: <strong>1800 2018</strong></li>
+                <li><i class="fas fa-clock"></i> Giờ làm việc: Thứ 2 - CN, 8:00 - 21:00</li>
+                <li>
+                    <button class="store-system-btn">Hệ thống cửa hàng</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>THÔNG TIN HỖ TRỢ</h4>
+            <ul>
+                <li>Chính sách bảo hành/Đổi trả/Vận chuyển</li>
+                <li>Chính sách bảo mật</li>
+                <li>Hình thức thanh toán</li>
+                <li>Chính sách lưu trữ thiết bị</li>
+                <li>Thông tin chủ sở hữu Website</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>ĐỒ ÁN</h4>
+            <ul>
+                <li> Duy Nhat</li>
+                <li> Nghia</li>
+                <li> Nam</li>
+            </ul>
+        </div>
+
+        <div class="footer-section">
+            <h4>KẾT NỐI</h4>
+            <div class="social-icons">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>Công ty Cổ Phần thương mại dịch vụ NHT</p>
+        <p>GPDKKD số 0314366277 do Sở kế hoạch và Đầu tư TP. Hồ Chí Minh cấp ngày 21/04/2017</p>
+        <p>Địa chỉ: TP.HCM</p>
+        <p>Email: admin@gmail.vn</p>
+    </div>
+</footer>
 </html>
