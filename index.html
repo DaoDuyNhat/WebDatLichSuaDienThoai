@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="CSS/HeaderUser.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="CSS/FooterUser.css">
+    <link rel="stylesheet" href="CSS/BodyHomeUser.css">
 
 </head>
 <header>
@@ -26,13 +27,175 @@
         </div>
     </div>
     <div class="sub-navbar">
-        <a href="#"><i class="fas fa-home"></i> TRANG CHỦ</a>
-        <a href="#"> <i class="fas fa-star"></i> SẢN PHẨM THEO HÃNG</a>
-        <a href="#"> <i class="fas fa-tools"></i> LỖI THIẾT BỊ</a>
+        <a href="#" style="color: #FF6A00"><i class="fas fa-home"  style="color: #FF6A00"></i> TRANG CHỦ</a>
+        <a href="User/SanPhamNoiBat.html"> <i class="fas fa-tools"></i> LỖI THIẾT BỊ</a>
         <a href="#"><i class="fas fa-shield-alt"></i> CHÍNH SÁCH BẢO HÀNH</a>
         <a href="#"><i class="fas fa-calendar-alt"></i> ĐẶT LỊCH</a>
     </div>
 </header>
+
+<body>
+<div class="container">
+    <div class="slideshow-container">
+
+        <!-- Slide 1 -->
+        <input type="radio" name="slider" id="slide1" checked>
+        <div class="mySlides">
+            <img src="img/slide.jpg" alt="Sửa chữa điện thoại">
+            <div class="controls">
+                <label for="slide1" class="prev">&#10094;</label>
+                <label for="slide2" class="next">&#10095;</label>
+            </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <input type="radio" name="slider" id="slide2">
+        <div class="mySlides">
+            <img src="img/slide3.jpg" alt="Giá cả hợp lý">
+            <div class="controls">
+                <label for="slide1" class="prev">&#10094;</label>
+                <label for="slide3" class="next">&#10095;</label>
+            </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <input type="radio" name="slider" id="slide3">
+        <div class="mySlides">
+            <img src="img/slide.jpg" alt="Chất lượng dịch vụ">
+            <div class="controls">
+                <label for="slide2" class="prev">&#10094;</label>
+                <label for="slide3" class="next">&#10095;</label>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.mySlides');
+            const radios = document.querySelectorAll('input[name="slider"]');
+            let currentSlide = 0; // Chỉ số slide hiện tại
+
+            // Hiển thị slide đầu tiên
+            showSlides();
+
+            // Thêm sự kiện cho các radio buttons
+            radios.forEach((radio) => {
+                radio.addEventListener('change', showSlides);
+            });
+
+            // Hàm để hiển thị slide
+            function showSlides() {
+                slides.forEach((slide, index) => {
+                    slide.style.display = radios[index].checked ? 'block' : 'none';
+                });
+            }
+
+            // Tự động chuyển slide sau mỗi 3 giây
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % radios.length; // Chuyển đến slide tiếp theo
+                radios[currentSlide].checked = true; // Đánh dấu radio button tương ứng
+                showSlides(); // Gọi hàm hiển thị slide
+            }, 5000);
+        });
+
+
+    </script>
+
+    <div class="titleSp">Sản Phẩm Đề Cử</div>
+    <div class="newProduct">
+        <div class="product-listing">
+            <img src="../img/thayloa.png" alt="Speaker replacement">
+            <h3>Thay loa trong Samsung M35</h3>
+            <p>Replace the speaker in a Samsung M35</p>
+            <p>Giá: 440,000₫</p>
+            <p>Giảm giá 15% khi mua phụ kiện</p>
+            <div class="viewProduct">
+                <a href="#" class="btn">Xem</a>
+                <a href="#" class="btn">Thêm giỏ hàng</a>
+            </div>
+        </div>
+        <div class="product-listing">
+            <img src="../img/thayloa.png" alt="Speaker replacement">
+            <h3>Thay loa trong Samsung M35</h3>
+            <p>Replace the speaker in a Samsung M35</p>
+            <p>Giá: 440,000₫</p>
+            <p>Giảm giá 15% khi mua phụ kiện</p>
+            <div class="viewProduct">
+                <a href="#" class="btn">Xem</a>
+                <a href="#" class="btn">Thêm giỏ hàng</a>
+            </div>
+        </div>
+        <div class="product-listing">
+            <img src="../img/thayloa.png" alt="Speaker replacement">
+            <h3>Thay loa trong Samsung M35</h3>
+            <p>Replace the speaker in a Samsung M35</p>
+            <p>Giá: 440,000₫</p>
+            <p>Giảm giá 15% khi mua phụ kiện</p>
+            <div class="viewProduct">
+                <a href="#" class="btn">Xem</a>
+                <a href="#" class="btn">Thêm giỏ hàng</a>
+            </div>
+        </div>
+        <div class="product-listing">
+            <img src="../img/thayloa.png" alt="Speaker replacement">
+            <h3>Thay loa trong Samsung M35</h3>
+            <p>Replace the speaker in a Samsung M35</p>
+            <p>Giá: 440,000₫</p>
+            <p>Giảm giá 15% khi mua phụ kiện</p>
+            <div class="viewProduct">
+                <a href="#" class="btn">Xem</a>
+                <a href="#" class="btn">Thêm giỏ hàng</a>
+            </div>
+        </div>
+        <div class="product-listing">
+            <img src="../img/thayloa.png" alt="Speaker replacement">
+            <h3>Thay loa trong Samsung M35</h3>
+            <p>Replace the speaker in a Samsung M35</p>
+            <p>Giá: 440,000₫</p>
+            <p>Giảm giá 15% khi mua phụ kiện</p>
+            <div class="viewProduct">
+                <a href="#" class="btn">Xem</a>
+                <a href="#" class="btn">Thêm giỏ hàng</a>
+            </div>
+        </div>
+        <div class="product-listing">
+            <img src="../img/thayloa.png" alt="Speaker replacement">
+            <h3>Thay loa trong Samsung M35</h3>
+            <p>Replace the speaker in a Samsung M35</p>
+            <p>Giá: 440,000₫</p>
+            <p>Giảm giá 15% khi mua phụ kiện</p>
+            <div class="viewProduct">
+                <a href="#" class="btn">Xem</a>
+                <a href="#" class="btn">Thêm giỏ hàng</a>
+            </div>
+        </div>
+        <div class="product-listing">
+            <img src="../img/thayloa.png" alt="Speaker replacement">
+            <h3>Thay loa trong Samsung M35</h3>
+            <p>Replace the speaker in a Samsung M35</p>
+            <p>Giá: 440,000₫</p>
+            <p>Giảm giá 15% khi mua phụ kiện</p>
+            <div class="viewProduct">
+                <a href="#" class="btn">Xem</a>
+                <a href="#" class="btn">Thêm giỏ hàng</a>
+            </div>
+        </div>
+        <div class="product-listing">
+            <img src="../img/thayloa.png" alt="Speaker replacement">
+            <h3>Thay loa trong Samsung M35</h3>
+            <p>Replace the speaker in a Samsung M35</p>
+            <p>Giá: 440,000₫</p>
+            <p>Giảm giá 15% khi mua phụ kiện</p>
+            <div class="viewProduct">
+                <a href="#" class="btn">Xem</a>
+                <a href="#" class="btn">Thêm giỏ hàng</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
 
 <footer>
 
@@ -63,11 +226,11 @@
         </div>
 
         <div class="footer-section">
-            <h4>ĐỒ ÁN</h4>
+            <h4>Người Thực Hiện</h4>
             <ul>
-                <li> Duy Nhat</li>
-                <li> Nghia</li>
-                <li> Nam</li>
+                <li> Đào Duy Nhật</li>
+                <li>Đặng Trung Nghĩa</li>
+                <li> Nguyễn Hoàng Nam</li>
             </ul>
         </div>
 
@@ -84,10 +247,10 @@
     </div>
 
     <div class="footer-bottom">
-        <p>Công ty Cổ Phần thương mại dịch vụ NHT</p>
-        <p>GPDKKD số 0314366277 do Sở kế hoạch và Đầu tư TP. Hồ Chí Minh cấp ngày 21/04/2017</p>
+        <p>Công ty Cổ Phần thương mại dịch vụ PhoneRepair</p>
+        <p>GPDKKD số 0858200725 do Sở kế hoạch và Đầu tư TP. Hồ Chí Minh cấp ngày 20/10/2024</p>
         <p>Địa chỉ: TP.HCM</p>
-        <p>Email: admin@gmail.vn</p>
+        <p>Email: phonerepair@gmail.vn</p>
     </div>
 </footer>
 </html>
