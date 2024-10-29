@@ -34,13 +34,13 @@
     </div>
 </header>
 
-<body>
+<body onload="initializePage()">
 <div class="container">
     <div class="sidebar">
         <h4>Chọn hãng điện thoại</h4>
         <select id="brandSelect" onchange="filterProducts()">
             <option value="">Chọn hãng</option>
-            <option value="iphone">IPhone</option>
+            <option value="iphone" selected >IPhone</option>
             <option value="samsung">Samsung</option>
         </select>
 
@@ -354,6 +354,12 @@
 </div>
 
 <script>
+
+    function initializePage() {
+        document.getElementById('brandSelect').value = 'iphone'; // Đặt giá trị mặc định là "iphone"
+        filterProducts(); // Gọi filterProducts để hiển thị iPhone ngay khi trang tải
+    }
+
     function filterProducts() {
         const brandSelect = document.getElementById('brandSelect');
         const selectedBrand = brandSelect.value;
@@ -390,7 +396,7 @@
         } else if (brand === 'samsung') {
             if (selectedAccessory === 'samsungGalaxyAccessory') {
                 document.getElementById('samsungGalaxyAccessories').style.display = 'flex';
-            } else if (selectedAccessory === 'samsungNoteAccessory') {
+            }else if (selectedAccessory === 'samsungNoteAccessory') {
                 document.getElementById('samsungM15Accessory').style.display = 'flex';
             }
             document.getElementById('samsungIssues').style.display = 'flex';
