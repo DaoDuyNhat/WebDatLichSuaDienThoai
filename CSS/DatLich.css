@@ -1,7 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    /*    !*margin: 0;*!*/
-    /*    !*padding: 0;*!*/
     background-color: #F5F7F3;
     color: #333;
 }
@@ -100,8 +98,9 @@ h3 {
 .container .box-2 {
     background: #FF6A00;
     width: 350px;
-    margin-left: -100px;
+    margin-left: 20px;
     margin-top: 20px;
+    margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
 }
