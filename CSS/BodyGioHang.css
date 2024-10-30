@@ -25,6 +25,20 @@ body {
     font-size: 16px;
 }
 
+
+.cart-toolbar .label_sanpham {
+    margin-left: 170px;
+
+}
+
+.cart-toolbar .label_price {
+    margin-left: 150px;
+}
+
+.button_checkbox{
+    margin-left: 5%;
+}
+
 .width_250px {
     width: 250px;
 }
@@ -58,10 +72,29 @@ body {
     border-radius: 8px;
     object-fit: cover;
 }
-
 .product-content_right {
+    display: block;
     margin-left: 15px;
+    max-width: 200px;
 }
+
+.product-content_right .name_product {
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    line-height: 1.5;
+}
+
+.product-content_right .guarantee {
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+    line-height: 1.5;
+}
+
+
 
 .name_product {
     font-size: 16px;
