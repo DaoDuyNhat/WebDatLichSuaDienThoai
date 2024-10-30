@@ -1,0 +1,71 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"177c197c-7b30-42e4-b541-125758c341fb\" name=\"Changes\" comment=\"create order\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"TypeScript File\" />\r\n        <option value=\"CSS File\" />\r\n        <option value=\"HTML File\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"master\" />\r\n      </map>\r\n    </option>\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitHubPullRequestSearchHistory\">{\r\n  &quot;lastFilter&quot;: {\r\n    &quot;state&quot;: &quot;OPEN&quot;,\r\n    &quot;assignee&quot;: &quot;trunghia-ne&quot;\r\n  }\r\n}</component>\r\n  <component name=\"GithubPullRequestsUISettings\">{\r\n  &quot;selectedUrlAndAccountId&quot;: {\r\n    &quot;url&quot;: &quot;https://github.com/DaoDuyNhat/WebDatLichSuaDienThoai.git&quot;,\r\n    &quot;accountId&quot;: &quot;e55a2bb8-a263-4f54-9edd-44b50da692ef&quot;\r\n  }\r\n}</component>\r\n  <component name=\"ProjectColorInfo\">{\r\n  &quot;associatedIndex&quot;: 5\r\n}</component>\r\n  <component name=\"ProjectId\" id=\"2nvdGsqtR6vKTQGS6ANdk58zAUJ\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"DefaultHtmlFileTemplate\": \"HTML File\",\r\n    \"JavaScript Debug.ChinhSach.html.executor\": \"Run\",\r\n    \"JavaScript Debug.DangKy.html.executor\": \"Run\",\r\n    \"JavaScript Debug.DangNhap.html.executor\": \"Run\",\r\n    \"JavaScript Debug.DatLich.html.executor\": \"Run\",\r\n    \"JavaScript Debug.GioHang.html.executor\": \"Run\",\r\n    \"JavaScript Debug.index.html.executor\": \"Run\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"last_opened_file_path\": \"E:/WebDatLichSuaDienThoai\",\r\n    \"list.type.of.created.stylesheet\": \"CSS\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"nodejs_package_manager_path\": \"npm\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  }\r\n}]]></component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"E:\\WebDatLichSuaDienThoai\\CSS\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"SharedIndexes\">\r\n    <attachedChunks>\r\n      <set>\r\n        <option value=\"bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96\" />\r\n      </set>\r\n    </attachedChunks>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"177c197c-7b30-42e4-b541-125758c341fb\" name=\"Changes\" comment=\"\" />\r\n      <created>1729857391254</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1729857391254</updated>\r\n      <workItem from=\"1729857392408\" duration=\"12573000\" />\r\n      <workItem from=\"1729919996282\" duration=\"177000\" />\r\n      <workItem from=\"1729920182699\" duration=\"10290000\" />\r\n      <workItem from=\"1729946951663\" duration=\"2166000\" />\r\n      <workItem from=\"1730014891759\" duration=\"75000\" />\r\n      <workItem from=\"1730016022115\" duration=\"31000\" />\r\n      <workItem from=\"1730016192338\" duration=\"898000\" />\r\n      <workItem from=\"1730019378924\" duration=\"604000\" />\r\n      <workItem from=\"1730042188401\" duration=\"24000\" />\r\n      <workItem from=\"1730198147977\" duration=\"210000\" />\r\n      <workItem from=\"1730198366262\" duration=\"1422000\" />\r\n      <workItem from=\"1730199808508\" duration=\"18000\" />\r\n      <workItem from=\"1730199901186\" duration=\"1864000\" />\r\n      <workItem from=\"1730201864778\" duration=\"602000\" />\r\n      <workItem from=\"1730202520432\" duration=\"1121000\" />\r\n      <workItem from=\"1730209688849\" duration=\"50000\" />\r\n      <workItem from=\"1730270586731\" duration=\"2797000\" />\r\n      <workItem from=\"1730273454280\" duration=\"5565000\" />\r\n      <workItem from=\"1730279135048\" duration=\"730000\" />\r\n      <workItem from=\"1730279875468\" duration=\"66000\" />\r\n      <workItem from=\"1730280016664\" duration=\"668000\" />\r\n      <workItem from=\"1730280952589\" duration=\"414000\" />\r\n      <workItem from=\"1730281376819\" duration=\"88000\" />\r\n      <workItem from=\"1730281728785\" duration=\"381000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"create order\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730201685026</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730201685026</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"create order\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730202135527</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730202135527</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"create order\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730202191454</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730202191454</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"create order\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730202223720</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730202223720</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"create order\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730202395983</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730202395983</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"create order\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730279179460</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730279179460</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"create order\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730280383675</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730280383676</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"create order\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730280542497</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730280542497</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"create order\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730281110799</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730281110799</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"create order\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1730281387150</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1730281387150</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"create chinh sach\" />\r\n    <MESSAGE value=\"Merge pull request #8 from DaoDuyNhat/daoduynhat22130194&#10;&#10;update gio hang\" />\r\n    <MESSAGE value=\"Merge remote-tracking branch 'origin/master' into dangtrungnghia_22130182\" />\r\n    <MESSAGE value=\"create order\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"create order\" />\r\n  </component>\r\n</project>
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision ed54f22e18af0867eca6fbc90f8d66db4948e55a)
++++ b/.idea/workspace.xml	(date 1730282677741)
+@@ -22,7 +22,7 @@
+   <component name="Git.Settings">
+     <option name="RECENT_BRANCH_BY_REPOSITORY">
+       <map>
+-        <entry key="$PROJECT_DIR$" value="master" />
++        <entry key="$PROJECT_DIR$" value="dangtrungnghia_22130182" />
+       </map>
+     </option>
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -47,26 +47,26 @@
+     <option name="hideEmptyMiddlePackages" value="true" />
+     <option name="showLibraryContents" value="true" />
+   </component>
+-  <component name="PropertiesComponent"><![CDATA[{
+-  "keyToString": {
+-    "DefaultHtmlFileTemplate": "HTML File",
+-    "JavaScript Debug.ChinhSach.html.executor": "Run",
+-    "JavaScript Debug.DangKy.html.executor": "Run",
+-    "JavaScript Debug.DangNhap.html.executor": "Run",
+-    "JavaScript Debug.DatLich.html.executor": "Run",
+-    "JavaScript Debug.GioHang.html.executor": "Run",
+-    "JavaScript Debug.index.html.executor": "Run",
+-    "RunOnceActivity.ShowReadmeOnStart": "true",
+-    "last_opened_file_path": "E:/WebDatLichSuaDienThoai",
+-    "list.type.of.created.stylesheet": "CSS",
+-    "node.js.detected.package.eslint": "true",
+-    "node.js.detected.package.tslint": "true",
+-    "node.js.selected.package.eslint": "(autodetect)",
+-    "node.js.selected.package.tslint": "(autodetect)",
+-    "nodejs_package_manager_path": "npm",
+-    "vue.rearranger.settings.migration": "true"
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
++    &quot;JavaScript Debug.ChinhSach.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.DangKy.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.DangNhap.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.DatLich.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.GioHang.html.executor&quot;: &quot;Run&quot;,
++    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
++    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
++    &quot;last_opened_file_path&quot;: &quot;E:/WebDatLichSuaDienThoai&quot;,
++    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
++    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
++    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
++    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
++    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
++    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
++    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+   }
+-}]]></component>
++}</component>
+   <component name="RecentsManager">
+     <key name="CopyFile.RECENT_KEYS">
+       <recent name="E:\WebDatLichSuaDienThoai\CSS" />
+@@ -111,6 +111,7 @@
+       <workItem from="1730280952589" duration="414000" />
+       <workItem from="1730281376819" duration="88000" />
+       <workItem from="1730281728785" duration="381000" />
++      <workItem from="1730282115226" duration="558000" />
+     </task>
+     <task id="LOCAL-00001" summary="create order">
+       <option name="closed" value="true" />
