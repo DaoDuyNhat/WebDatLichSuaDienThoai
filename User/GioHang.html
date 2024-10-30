@@ -8,6 +8,46 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="../CSS/BodyGioHang.css">
 </head>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+    const selectAllCheckbox = document.querySelector(".select-all");
+    const productCheckboxes = document.querySelectorAll(".product-checkbox");
+    const totalAmountElement = document.querySelector(".total-amount");
+
+    // Khi click vào checkbox "Tổng"
+    selectAllCheckbox.addEventListener("change", function() {
+        const isChecked = this.checked;
+        productCheckboxes.forEach(function(checkbox) {
+            checkbox.checked = isChecked; // Chọn tất cả hoặc bỏ chọn tất cả
+        });
+        updateTotal(); // Cập nhật tổng tiền
+    });
+
+    // Khi click vào từng checkbox sản phẩm
+    productCheckboxes.forEach(function(checkbox) {
+        checkbox.addEventListener("change", function() {
+            updateTotal(); // Cập nhật tổng tiền khi có sự thay đổi
+        });
+    });
+
+    function updateTotal() {
+        let total = 0;
+        productCheckboxes.forEach(function(checkbox) {
+            if (checkbox.checked) { // Nếu sản phẩm được chọn
+                const cartItem = checkbox.closest(".cart-list-product_item");
+                const priceElement = cartItem.querySelector(".total_price");
+                const priceText = priceElement.innerText.replace("VNĐ", "").replace(/\./g, "");
+                const price = parseFloat(priceText);
+                total += price;
+            }
+        });
+        totalAmountElement.innerText = total.toLocaleString("vi-VN") + " VNĐ"; // Hiển thị tổng tiền
+    }
+
+    // Tính tổng tiền ban đầu khi trang được tải
+    updateTotal();
+});
+</script>
 <header>
     <div class="navbar">
         <div class="logo">
@@ -33,7 +73,62 @@
     </div>
 </header>
 <body>
+<div class="container">
+    <div class="cart-toolbar">
+        <input type="checkbox" class="select-all button_checkbox"/>
+        <div class="label_sanpham width_150px">Sản Phẩm</div>
+        <div class="label_price">Đơn Giá</div>
+        <div class="label_quantity">Số Lượng</div>
+        <div class="label-total_price">Số Tiền</div>
+        <div class="label-section">Thao Tác</div>
+    </div>
 
+    <div class="cart-list-product">
+        <div class="cart-list-product_item">
+            <input type="checkbox" class="product-checkbox button_checkbox"/>
+            <div class="product-content">
+                <div class="product-content_left">
+                    <img src="../img/thayloa.png" style="width: 80px;height: 80px"/>
+                </div>
+                <div class="product-content_right">
+                    <div class="name_product">Thay loa Samsung</div>
+                    <div class="branch_product">Hãng: Samsung</div>
+                    <div class="guarantee">Đổi trả miễn phí trong vòng 7 ngày</div>
+                </div>
+            </div>
+            <div class="price">500.000VNĐ</div>
+            <div class="quantity">1</div>
+            <div class="total_price">500.000VNĐ</div>
+            <div class="section">Xóa</div>
+        </div>
+        <div class="cart-list-product_item">
+            <input type="checkbox" class="product-checkbox button_checkbox"/>
+            <div class="product-content">
+                <div class="product-content_left">
+                    <img src="../img/thayloa.png" style="width: 80px;height: 80px"/>
+                </div>
+                <div class="product-content_right">
+                    <div class="name_product">Thay loa Samsung</div>
+                    <div class="branch_product">Hãng: Samsung</div>
+                    <div class="guarantee">Đổi trả miễn phí trong vòng 7 ngày</div>
+                </div>
+            </div>
+            <div class="price">500.000VNĐ</div>
+            <div class="quantity">1</div>
+            <div class="total_price">500.000VNĐ</div>
+            <div class="section">Xóa</div>
+        </div>
+    </div>
+
+    <div class="cart-total">
+        <div class="total-label">Tổng Tiền:</div>
+        <div class="total-amount">0 VNĐ</div>
+    </div>
+
+    <div class="checkout-btn-container">
+        <button class="checkout-btn">Thanh Toán</button>
+    </div>
+</div>
 </body>
 <footer>
 
@@ -66,9 +161,9 @@
         <div class="footer-section">
             <h4>Người Thực Hiện</h4>
             <ul>
-                <li> Đào Duy Nhật</li>
+                <li>Đào Duy Nhật</li>
                 <li>Đặng Trung Nghĩa</li>
-                <li> Nguyễn Hoàng Nam</li>
+                <li>Nguyễn Hoàng Nam</li>
             </ul>
         </div>
 
@@ -91,4 +186,5 @@
         <p>Email: nam@gmail.vn</p>
     </div>
 </footer>
+
 </html>
