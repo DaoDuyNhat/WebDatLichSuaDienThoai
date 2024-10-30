@@ -34,53 +34,45 @@
         <a href="../User/DatLich.html"><i class="fas fa-calendar-alt"></i> ĐẶT LỊCH</a>
     </div>
 </header>
-
 <body>
-<div class="container">
-    <div class="box">
-        <form action="">
-            <h1>Register</h1>
+<div class="wrapper">
+    <div class="login-box">
+        <div class="login-header">
+            <span> Register</span>
+        </div>
+        <form>
             <div class="input-box">
-                <i class="fas fa-user user-icon"></i>
-                <input type="text" placeholder="Name" required>
+                <input type="text" id="username" class="input-field" required>
+                <label for="username" class="label">Username</label>
+                <i class="bx bx-user icon"></i>
             </div>
             <div class="input-box">
-                <i class="fas fa-envelope email-icon"></i>
-                <input type="email" placeholder="Email" required>
+                <input type="email" id="email" class="input-field" required>
+                <label for="email" class="label">Email</label>
+                <i class="bx bx-envelope icon"></i>
             </div>
             <div class="input-box">
-                <i class="fas fa-phone phone-icon"></i>
-                <input type="tel" placeholder="Phone" required>
+                <input type="password" id="password" class="input-field" autocomplete="off">
+                <label for="password" class="label">Password</label>
+                <i class="bx bx-lock-alt icon" id="show-password"></i>
             </div>
             <div class="input-box">
-                <input type="password" id="password" placeholder="Password" required>
-                <i class="eye-icon fas fa-eye" onclick="togglePassword()"></i>
+                <input type="password" id="confirm-password" class="input-field" autocomplete="off">
+                <label for="confirm-password" class="label">Confirm Password</label>
+                <i class="bx bx-lock-alt icon"></i>
             </div>
-
-            <button type="submit" class="btn">Register</button>
-
-            <div class="login-link">
-                <p>Already have an account? <a href="DangNhap.html">Login</a></p>
+            <div class="input-box">
+                <input type="submit" class="input-submit" value="Register">
+            </div>
+            <div class="login">
+                <span>Already have an account?
+                    <a href="../User/DangNhap.html">Login</a></span>
             </div>
         </form>
     </div>
 </div>
-<script>
-    function togglePassword() {
-        const passwordInput = document.getElementById("password");
-        const eyeIcon = document.querySelector(".eye-icon");
 
-        if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-            eyeIcon.classList.remove("fa-eye");
-            eyeIcon.classList.add("fa-eye-slash");
-        } else {
-            passwordInput.type = "password";
-            eyeIcon.classList.remove("fa-eye-slash");
-            eyeIcon.classList.add("fa-eye");
-        }
-    }
-</script>
+<script src="form.js"></script>
 </body>
 <footer>
 
