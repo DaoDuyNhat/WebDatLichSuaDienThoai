@@ -13,6 +13,7 @@ footer {
     color: #333;
     width: 100%;
     height: auto;
+    margin-bottom: -20px;
 }
 
 .footer-container .logo {
