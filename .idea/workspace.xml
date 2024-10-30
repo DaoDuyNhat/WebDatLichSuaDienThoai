@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="177c197c-7b30-42e4-b541-125758c341fb" name="Changes" comment="create order" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript File" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;trunghia-ne&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/DaoDuyNhat/WebDatLichSuaDienThoai.git&quot;,
+    &quot;accountId&quot;: &quot;e55a2bb8-a263-4f54-9edd-44b50da692ef&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 5
+}</component>
+  <component name="ProjectId" id="2nvdGsqtR6vKTQGS6ANdk58zAUJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.ChinhSach.html.executor": "Run",
+    "JavaScript Debug.DangKy.html.executor": "Run",
+    "JavaScript Debug.DangNhap.html.executor": "Run",
+    "JavaScript Debug.DatLich.html.executor": "Run",
+    "JavaScript Debug.GioHang.html.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "E:/WebDatLichSuaDienThoai",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\WebDatLichSuaDienThoai\CSS" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-WS-242.23726.96" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="177c197c-7b30-42e4-b541-125758c341fb" name="Changes" comment="" />
+      <created>1729857391254</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729857391254</updated>
+      <workItem from="1729857392408" duration="12573000" />
+      <workItem from="1729919996282" duration="177000" />
+      <workItem from="1729920182699" duration="10290000" />
+      <workItem from="1729946951663" duration="2166000" />
+      <workItem from="1730014891759" duration="75000" />
+      <workItem from="1730016022115" duration="31000" />
+      <workItem from="1730016192338" duration="898000" />
+      <workItem from="1730019378924" duration="604000" />
+      <workItem from="1730042188401" duration="24000" />
+      <workItem from="1730198147977" duration="210000" />
+      <workItem from="1730198366262" duration="1422000" />
+      <workItem from="1730199808508" duration="18000" />
+      <workItem from="1730199901186" duration="1864000" />
+      <workItem from="1730201864778" duration="602000" />
+      <workItem from="1730202520432" duration="1121000" />
+      <workItem from="1730209688849" duration="50000" />
+      <workItem from="1730270586731" duration="2797000" />
+      <workItem from="1730273454280" duration="5565000" />
+      <workItem from="1730279135048" duration="730000" />
+      <workItem from="1730279875468" duration="66000" />
+      <workItem from="1730280016664" duration="668000" />
+      <workItem from="1730280952589" duration="414000" />
+      <workItem from="1730281376819" duration="88000" />
+      <workItem from="1730281728785" duration="381000" />
+    </task>
+    <task id="LOCAL-00001" summary="create order">
+      <option name="closed" value="true" />
+      <created>1730201685026</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1730201685026</updated>
+    </task>
+    <task id="LOCAL-00002" summary="create order">
+      <option name="closed" value="true" />
+      <created>1730202135527</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1730202135527</updated>
+    </task>
+    <task id="LOCAL-00003" summary="create order">
+      <option name="closed" value="true" />
+      <created>1730202191454</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1730202191454</updated>
+    </task>
+    <task id="LOCAL-00004" summary="create order">
+      <option name="closed" value="true" />
+      <created>1730202223720</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1730202223720</updated>
+    </task>
+    <task id="LOCAL-00005" summary="create order">
+      <option name="closed" value="true" />
+      <created>1730202395983</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730202395983</updated>
+    </task>
+    <task id="LOCAL-00006" summary="create order">
+      <option name="closed" value="true" />
+      <created>1730279179460</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730279179460</updated>
+    </task>
+    <task id="LOCAL-00007" summary="create order">
+      <option name="closed" value="true" />
+      <created>1730280383675</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730280383676</updated>
+    </task>
+    <task id="LOCAL-00008" summary="create order">
+      <option name="closed" value="true" />
+      <created>1730280542497</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1730280542497</updated>
+    </task>
+    <task id="LOCAL-00009" summary="create order">
+      <option name="closed" value="true" />
+      <created>1730281110799</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1730281110799</updated>
+    </task>
+    <task id="LOCAL-00010" summary="create order">
+      <option name="closed" value="true" />
+      <created>1730281387150</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1730281387150</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create chinh sach" />
+    <MESSAGE value="Merge pull request #8 from DaoDuyNhat/daoduynhat22130194&#10;&#10;update gio hang" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/master' into dangtrungnghia_22130182" />
+    <MESSAGE value="create order" />
+    <option name="LAST_COMMIT_MESSAGE" value="create order" />
+  </component>
+</project>
