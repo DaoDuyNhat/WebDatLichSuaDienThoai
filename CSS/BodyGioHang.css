@@ -1,13 +1,12 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Poppins, sans-serif;
     background-color: #f0f2f5;
-    margin: 0;
-    padding: 0;
+
 }
+
 
 .container {
     margin: 50px auto;
-    padding: 20px;
     width: 90%;
     max-width: 1200px;
     background-color: #fff;
@@ -190,4 +189,7 @@ body {
 
 .checkout-btn:hover {
     background-color: #219150;
+}
+.image-upload{
+
 }
