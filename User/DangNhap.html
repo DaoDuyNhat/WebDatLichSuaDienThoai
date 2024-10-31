@@ -22,7 +22,7 @@
             </div>
         </div>
         <div class="nav-right">
-            <a href="../User/GioHang.html"> <i class="fas fa-shopping-cart"></i> Giỏ hàng <span class="cart-count">0</span></a>
+            <a href="TraCuu.html"> <i class="fas fa-search search-icon"></i> Tra cứu  <span class="cart-count">0</span></a>
             <a href="../User/Account.html"> <i class="fas fa-cog"></i> Cài đặt</a>
             <a href="#"> <i class="fas fa-user"></i> Login</a>
         </div>
@@ -36,48 +36,47 @@
 </header>
 
 <body>
-<div class="container">
-    <div class="box">
-        <form action="">
-            <h1>Login</h1>
+<div class="wrapper">
+    <div class="login-box">
+        <div class="login-header">
+            <span> Login</span>
+        </div>
+        <form>
             <div class="input-box">
-                <input type="text" placeholder="Username" required>
-                <i class="fas fa-user user-icon"></i>
+                <input type="text" id="user" class="input-field" required>
+                <label for="user" class="label">Username
+                </label>
+                <i class="bx bx-user icon"></i>
             </div>
             <div class="input-box">
-                <input type="password" id="password" placeholder="Password" required>
-                <i class="eye-icon fas fa-eye" onclick="togglePassword()"></i>
+                <input type="password" id="pass" class="input-field" autocomplete="off">
+                <label for="pass" class="label">Password</label>
+                <i class="bx bx-lock-alt icon" id="show-password">
+                </i>
             </div>
-
             <div class="remember-forgot">
-                <label><input type="checkbox"> Remember me</label>
-                <a href="#">Forgot password?</a>
+                <div class="remember-me">
+                    <input type="checkbox" id="remember">
+                    <label for="remember">Remember me</label>
+                </div>
+                <div class="forgot">
+                    <a href="#">Forgot password</a>
+                </div>
             </div>
-            <button type="submit" class="btn">Login</button>
-
-            <div class="register-link">
-                <p>Don't have an account? <a href="DangKy.html">Register</a></p>
+            <div class="input-box">
+                <input type="submit" class="input-submit" value="Login">
+            </div>
+            <div class="register">
+                    <span>Don't have an account?
+                        <a href="../User/DangKy.html">Register</a></span>
             </div>
         </form>
     </div>
 </div>
-<script>
-    function togglePassword() {
-        const passwordInput = document.getElementById("password");
-        const eyeIcon = document.querySelector(".eye-icon");
 
-        if (passwordInput.type === "password") {
-            passwordInput.type = "text";
-            eyeIcon.classList.remove("fa-eye");
-            eyeIcon.classList.add("fa-eye-slash");
-        } else {
-            passwordInput.type = "password";
-            eyeIcon.classList.remove("fa-eye-slash");
-            eyeIcon.classList.add("fa-eye");
-        }
-    }
-</script>
+<script src="form.js"></script>
 </body>
+
 <footer>
 
     <div class="footer-container">

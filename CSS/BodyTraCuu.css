@@ -172,12 +172,11 @@ body {
 }
 
 .checkout-btn-container {
-    text-align: right;
-    margin-top: 20px;
+    margin-left: 70%;
+    margin-top: 10px;
 }
 
 .checkout-btn {
-    background-color: #27ae60;
     color: white;
     padding: 10px 20px;
     font-size: 18px;
@@ -185,6 +184,8 @@ body {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+    background-color: #e67e22;
+    margin-bottom: 20px;
 }
 
 .checkout-btn:hover {
