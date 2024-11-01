@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+#sidebar {
+    width: 250px;
+    background-color: #ffffff;
+    color: #333;
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    overflow-y: auto;
+    transition: width 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#sidebar .brand {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    font-size: 1.5rem;
+    color: #FF6A00;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: white;
+    margin-left: 15%;
+    margin-bottom: 10%;
+}
+
+#sidebar .brand .icon {
+    margin-right: 10px;
+    font-size: 1.8rem;
+}
+
+#sidebar .side-menu {
+    margin: 0 10px;
+}
+
+#sidebar .side-menu .border-bottom {
+    list-style-type: none;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#sidebar .side-menu .side-dropdown {
+    display: none; /* Ẩn phần dropdown ban đầu */
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#sidebar .side-menu li {
+    position: relative;
+}
+
+#sidebar .side-menu li a {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    color: #333;
+    text-decoration: none;
+    transition: background-color 0.3s, box-shadow 0.3s ease;
+}
+
+#sidebar .side-menu li a .icon {
+    margin-right: 10px;
+}
+
+#sidebar .side-menu .side-dropdown.active {
+    display: block; /* Hiện phần dropdown khi có class active */
+}
+
+#sidebar .side-menu li a.add-product:hover {
+    background-color: #FF6A00;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#sidebar .side-menu li a.add-product:hover .icon {
+    color: #fff;
+}
+
+#sidebar .side-menu .side-dropdown li a:hover {
+    background-color: transparent;
+    color: #FF6A00;
+}
+
+#sidebar .side-menu li a .icon-right {
+    margin-left: auto;
+    transition: transform 0.3s;
+}
+
+#sidebar .side-menu li a .icon-right.rotated {
+    transform: rotate(90deg);
+}
+
+#main-content {
+    margin-left: 250px;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+#sidebar .side-menu li a.logout:hover {
+    background-color: #FF6A00;
+    color: #fff;
+    border-radius: 5px;
+}
+
+#sidebar .side-menu li a.logout .icon {
+    margin-right: 10px;
+}
+
+#sidebar .side-menu li a.logout:hover .icon {
+    color: #fff;
+}
