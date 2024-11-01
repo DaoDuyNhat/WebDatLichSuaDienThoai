@@ -96,15 +96,14 @@ h3 {
 }
 
 .container .box-2 {
-    background: #FF6A00;
+    background-image: url("../img/ads.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
     width: 350px;
     margin-left: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-.container .box-2:hover {
-    background-color: #de3434;
-    color: #fff;
 }
