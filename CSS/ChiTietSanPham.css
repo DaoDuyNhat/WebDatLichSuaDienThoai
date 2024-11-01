@@ -1,0 +1,187 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #F9FAFB;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-detail {
+    display: flex;
+    gap: 30px;
+}
+
+.product-image-section {
+    flex: 1;
+    border-right: 1px solid #e0e0e0;
+    padding-right: 20px;
+    text-align: center;
+    flex-basis: 70%;
+    border-right: 1px solid #e0e0e0;
+}
+
+.main-image {
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.thumbnail-images {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.thumbnail-images img {
+    width: 60px;
+    height: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    transition: border 0.3s;
+}
+
+.thumbnail-images img:hover {
+    border-color: #ff6600;
+}
+
+.product-info-section {
+    flex: 1;
+    padding: 20px;
+    flex-basis: 30%;
+}
+
+.product-info-section h1 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.price {
+    font-size: 32px;
+    color: #E60023;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.warranty, .duration {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.booking-button, .call-button {
+    display: block;
+    width: 100%;
+    margin-top: 15px;
+    padding: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.booking-button:hover, .call-button:hover {
+    background-color: #ff8a00;
+}
+
+.call_form {
+    display: flex;
+}
+
+.call-button {
+    flex-basis: 60%;
+    color: #ff6600;
+    font-weight: 500;
+    background-color: transparent;
+    border: 1px solid #ff6600;
+}
+
+.discount-banner {
+    background-color: #FFF3E0;
+    color: #D84315;
+    padding: 15px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+.benefits {
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+.benefits ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.benefits ul li {
+    margin-bottom: 8px;
+}
+
+.service-commitment, .service-detail {
+    margin-top: 30px;
+    background-color: #FAFAFA;
+    border-radius: 8px;
+    padding: 20px;
+}
+
+.service-commitment h2, .service-detail h2 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.service-commitment ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 16px;
+}
+
+.service-commitment ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: #FF6A00;
+}
+
+.service-detail p {
+    font-size: 16px;
+    color: #666;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+input[type="text"]:focus {
+    border-color: #ff6600;
+    outline: none;
+}
+
+/* Footer and Header are untouched, keeping your original styles */
