@@ -21,9 +21,9 @@
             </div>
         </div>
         <div class="nav-right">
-            <a href="TraCuu.html"> <i class="fas fa-search search-icon"></i> Tra cứu  <span class="cart-count">0</span></a>
-            <a href="../User/Account.html"> <i class="fas fa-cog"></i> Cài đặt</a>
-            <a href="../User/DangNhap.html"> <i class="fas fa-user"></i> Login</a>
+            <a href="TraCuu.html"> <i class="fas fa-search search-icon"></i> Tra cứu
+                <a href="../User/Account.html"> <i class="fas fa-cog"></i> Cài đặt</a>
+                <a href="../User/DangNhap.html"> <i class="fas fa-user"></i> Login</a>
         </div>
     </div>
     <div class="sub-navbar">
@@ -40,7 +40,7 @@
         <h4>Chọn hãng điện thoại</h4>
         <select id="brandSelect" onchange="filterProducts()">
             <option value="">Chọn hãng</option>
-            <option value="iphone" selected >IPhone</option>
+            <option value="iphone" selected>IPhone</option>
             <option value="samsung">Samsung</option>
         </select>
 
@@ -396,7 +396,7 @@
         } else if (brand === 'samsung') {
             if (selectedAccessory === 'samsungGalaxyAccessory') {
                 document.getElementById('samsungGalaxyAccessories').style.display = 'flex';
-            }else if (selectedAccessory === 'samsungNoteAccessory') {
+            } else if (selectedAccessory === 'samsungNoteAccessory') {
                 document.getElementById('samsungM15Accessory').style.display = 'flex';
             }
             document.getElementById('samsungIssues').style.display = 'flex';
