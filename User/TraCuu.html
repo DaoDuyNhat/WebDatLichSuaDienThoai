@@ -9,44 +9,44 @@
     <link rel="stylesheet" href="../CSS/BodyTraCuu.css">
 </head>
 <script>
-    document.addEventListener("DOMContentLoaded", function() {
-    const selectAllCheckbox = document.querySelector(".select-all");
-    const productCheckboxes = document.querySelectorAll(".product-checkbox");
-    const totalAmountElement = document.querySelector(".total-amount");
+    document.addEventListener("DOMContentLoaded", function () {
+        const selectAllCheckbox = document.querySelector(".select-all");
+        const productCheckboxes = document.querySelectorAll(".product-checkbox");
+        const totalAmountElement = document.querySelector(".total-amount");
 
-    // Khi click vào checkbox "Tổng"
-    selectAllCheckbox.addEventListener("change", function() {
-        const isChecked = this.checked;
-        productCheckboxes.forEach(function(checkbox) {
-            checkbox.checked = isChecked; // Chọn tất cả hoặc bỏ chọn tất cả
+        // Khi click vào checkbox "Tổng"
+        selectAllCheckbox.addEventListener("change", function () {
+            const isChecked = this.checked;
+            productCheckboxes.forEach(function (checkbox) {
+                checkbox.checked = isChecked; // Chọn tất cả hoặc bỏ chọn tất cả
+            });
+            updateTotal(); // Cập nhật tổng tiền
         });
-        updateTotal(); // Cập nhật tổng tiền
+
+        // Khi click vào từng checkbox sản phẩm
+        productCheckboxes.forEach(function (checkbox) {
+            checkbox.addEventListener("change", function () {
+                updateTotal(); // Cập nhật tổng tiền khi có sự thay đổi
+            });
+        });
+
+        function updateTotal() {
+            let total = 0;
+            productCheckboxes.forEach(function (checkbox) {
+                if (checkbox.checked) { // Nếu sản phẩm được chọn
+                    const cartItem = checkbox.closest(".cart-list-product_item");
+                    const priceElement = cartItem.querySelector(".total_price");
+                    const priceText = priceElement.innerText.replace("VNĐ", "").replace(/\./g, "");
+                    const price = parseFloat(priceText);
+                    total += price;
+                }
+            });
+            totalAmountElement.innerText = total.toLocaleString("vi-VN") + " VNĐ"; // Hiển thị tổng tiền
+        }
+
+        // Tính tổng tiền ban đầu khi trang được tải
+        updateTotal();
     });
-
-    // Khi click vào từng checkbox sản phẩm
-    productCheckboxes.forEach(function(checkbox) {
-        checkbox.addEventListener("change", function() {
-            updateTotal(); // Cập nhật tổng tiền khi có sự thay đổi
-        });
-    });
-
-    function updateTotal() {
-        let total = 0;
-        productCheckboxes.forEach(function(checkbox) {
-            if (checkbox.checked) { // Nếu sản phẩm được chọn
-                const cartItem = checkbox.closest(".cart-list-product_item");
-                const priceElement = cartItem.querySelector(".total_price");
-                const priceText = priceElement.innerText.replace("VNĐ", "").replace(/\./g, "");
-                const price = parseFloat(priceText);
-                total += price;
-            }
-        });
-        totalAmountElement.innerText = total.toLocaleString("vi-VN") + " VNĐ"; // Hiển thị tổng tiền
-    }
-
-    // Tính tổng tiền ban đầu khi trang được tải
-    updateTotal();
-});
 </script>
 <header>
     <div class="navbar">
@@ -60,13 +60,13 @@
             </div>
         </div>
         <div class="nav-right">
-            <a href="../User/TraCuu.html"> <i class="fas fa-search search-icon"></i> Tra cứu  <span class="cart-count">0</span></a>
-            <a href="../User/Account.html"> <i class="fas fa-cog"></i> Cài đặt</a>
-            <a href="../User/DangNhap.html"> <i class="fas fa-user"></i> Login</a>
+            <a href="../User/TraCuu.html"> <i class="fas fa-search search-icon"></i> Tra cứu
+                <a href="../User/Account.html"> <i class="fas fa-cog"></i> Cài đặt</a>
+                <a href="../User/DangNhap.html"> <i class="fas fa-user"></i> Login</a>
         </div>
     </div>
     <div class="sub-navbar">
-        <a href="../index.html"><i class="fas fa-home"  ></i> TRANG CHỦ</a>
+        <a href="../index.html"><i class="fas fa-home"></i> TRANG CHỦ</a>
         <a href="../User/SanPhamNoiBat.html"> <i class="fas fa-tools"></i> LỖI THIẾT BỊ</a>
         <a href="../User/ChinhSach.html"><i class="fas fa-shield-alt"></i> CHÍNH SÁCH BẢO HÀNH</a>
         <a href="../User/DatLich.html"><i class="fas fa-calendar-alt"></i> ĐẶT LỊCH</a>

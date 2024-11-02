@@ -1,135 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Phone Repair - Đăt Lịch</title>
-  <link rel="stylesheet" href="../CSS/HeaderUser.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <link rel="stylesheet" href="../CSS/FooterUser.css">
-  <link rel="stylesheet" href="../CSS/BodyHomeUser.css">
-  <link rel="stylesheet" href="../CSS/DatLich.css">
+    <meta charset="UTF-8">
+    <title>Phone Repair - Đăt Lịch</title>
+    <link rel="stylesheet" href="../CSS/HeaderUser.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/FooterUser.css">
+    <link rel="stylesheet" href="../CSS/BodyHomeUser.css">
+    <link rel="stylesheet" href="../CSS/DatLich.css">
 
 </head>
 <header>
-  <div class="navbar">
-    <div class="logo">
-      <div>PHONE REPAIR</div>
+    <div class="navbar">
+        <div class="logo">
+            <div>PHONE REPAIR</div>
+        </div>
+        <div class="nav-left">
+            <div class="search-bar">
+                <input type="text" placeholder="Bạn cần tìm?">
+                <button class="search-btn"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <div class="nav-right">
+            <a href="TraCuu.html"> <i class="fas fa-search search-icon"></i> Tra cứu
+                <a href="../User/Account.html"> <i class="fas fa-cog"></i> Cài đặt</a>
+                <a href="../User/DangNhap.html"> <i class="fas fa-user"></i> Login</a>
+        </div>
     </div>
-    <div class="nav-left">
-      <div class="search-bar">
-        <input type="text" placeholder="Bạn cần tìm?">
-        <button class="search-btn"><i class="fa fa-search"></i></button>
-      </div>
+    <div class="sub-navbar">
+        <a href="../index.html"><i class="fas fa-home"></i> TRANG CHỦ</a>
+        <a href="../User/SanPhamNoiBat.html"> <i class="fas fa-tools"></i> LỖI THIẾT BỊ</a>
+        <a href="../User/ChinhSach.html"><i class="fas fa-shield-alt"></i> CHÍNH SÁCH BẢO HÀNH</a>
+        <a href="#" style="color: #FF6A00"><i class="fas fa-calendar-alt" style="color: #FF6A00"></i> ĐẶT LỊCH</a>
     </div>
-    <div class="nav-right">
-      <a href="TraCuu.html"> <i class="fas fa-search search-icon"></i> Tra cứu  <span class="cart-count">0</span></a>
-      <a href="../User/Account.html"> <i class="fas fa-cog"></i> Cài đặt</a>
-      <a href="../User/DangNhap.html"> <i class="fas fa-user"></i> Login</a>
-    </div>
-  </div>
-  <div class="sub-navbar">
-    <a href="../index.html"><i class="fas fa-home"></i> TRANG CHỦ</a>
-    <a href="../User/SanPhamNoiBat.html"> <i class="fas fa-tools"></i> LỖI THIẾT BỊ</a>
-    <a href="../User/ChinhSach.html"><i class="fas fa-shield-alt"></i> CHÍNH SÁCH BẢO HÀNH</a>
-    <a href="#"  style="color: #FF6A00"><i class="fas fa-calendar-alt" style="color: #FF6A00"></i> ĐẶT LỊCH</a>
-  </div>
 </header>
 <body>
 <div class="container">
-  <div class="box-1">
-    <h3>Đặt lịch sửa chữa</h3>
-    <form action="#" method="post">
-      <div class="form">
-        <div class="form-group">
-          <label for="name">Thông tin khách hàng</label>
-          <input type="text" id="name" name="name"  placeholder="Họ và tên (Bắt buộc)" required>
-          <input type="tel" id="phone" name="phone"  placeholder="Số điện thoại (Bắt buộc)" required>
-          <label for="service">Chọn cửa hàng:</label>
-          <select id="service" name="service" required>
-            <option value="">Vui lòng chọn cửa hàng</option>
-            <option value="">Chi Nhánh 1: 591 - 593 Lê Hồng Phong, Phường 10, Quận 10, TPHCM</option>
-            <option value="">Chi Nhánh 2: 303 XVNT, Phường 24, Quận Bình Thạnh, TPHCM</option>
-            <option value="">Chi Nhánh 3: 182 Khánh Hội, Phường 6, Quận 4, TPHCM</option>
-            <option value="">Chi Nhánh 4: 395 Quang Trung, Phường 10, Quận Gò Vấp, TPHCM</option>
-            <option value="">Chi Nhánh 5: 380 Võ Văn Ngân, Phường Bình Thọ, TP.Thủ Đức</option>
-            <option value="">Chi Nhánh 6: 380 Võ Văn Ngân, Phường Bình Thọ, TP.Thủ Đức</option>
-            <option value="">Chi Nhánh 7: 628 Âu Cơ, Phường 10, Quận Tân Bình, TPHCM</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="dong-may">Dòng máy</label>
-          <input type="text" id="dong-may" name="phone" placeholder="Tên dòng máy" required>
-          <textarea id="" name="notes" rows="4" placeholder="Lý do hư máy"></textarea>
-        </div>
-      </div>
-      <div class="form-group-date">
-        <label for="date">Chọn ngày:</label>
-        <input type="date" id="date" name="date" required>
-      </div>
-      <div class="form-group-date">
-        <label for="time">Giờ hẹn</label>
-        <input type="time" id="time" name="time" required>
-      </div>
-      <div class="btn">
-        <button class="quay-lai" type="button">Quay lại</button>
-        <button class="dat-lich" type="submit">Đặt Lịch</button>
-      </div>
-    </form>
-  </div>
-  <div class="box-2">
+    <div class="box-1">
+        <h3>Đặt lịch sửa chữa</h3>
+        <form action="#" method="post">
+            <div class="form">
+                <div class="form-group">
+                    <label for="name">Thông tin khách hàng</label>
+                    <input type="text" id="name" name="name" placeholder="Họ và tên (Bắt buộc)" required>
+                    <input type="tel" id="phone" name="phone" placeholder="Số điện thoại (Bắt buộc)" required>
+                    <label for="service">Chọn cửa hàng:</label>
+                    <select id="service" name="service" required>
+                        <option value="">Vui lòng chọn cửa hàng</option>
+                        <option value="">Chi Nhánh 1: 591 - 593 Lê Hồng Phong, Phường 10, Quận 10, TPHCM</option>
+                        <option value="">Chi Nhánh 2: 303 XVNT, Phường 24, Quận Bình Thạnh, TPHCM</option>
+                        <option value="">Chi Nhánh 3: 182 Khánh Hội, Phường 6, Quận 4, TPHCM</option>
+                        <option value="">Chi Nhánh 4: 395 Quang Trung, Phường 10, Quận Gò Vấp, TPHCM</option>
+                        <option value="">Chi Nhánh 5: 380 Võ Văn Ngân, Phường Bình Thọ, TP.Thủ Đức</option>
+                        <option value="">Chi Nhánh 6: 380 Võ Văn Ngân, Phường Bình Thọ, TP.Thủ Đức</option>
+                        <option value="">Chi Nhánh 7: 628 Âu Cơ, Phường 10, Quận Tân Bình, TPHCM</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="dong-may">Dòng máy</label>
+                    <input type="text" id="dong-may" name="phone" placeholder="Tên dòng máy" required>
+                    <textarea id="" name="notes" rows="4" placeholder="Lý do hư máy"></textarea>
+                </div>
+            </div>
+            <div class="form-group-date">
+                <label for="date">Chọn ngày:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+            <div class="form-group-date">
+                <label for="time">Giờ hẹn</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+            <div class="btn">
+                <button class="quay-lai" type="button">Quay lại</button>
+                <button class="dat-lich" type="submit">Đặt Lịch</button>
+            </div>
+        </form>
+    </div>
+    <div class="box-2">
 
-  </div>
+    </div>
 </div>
 </body>
 <footer>
-  <div class="footer-container">
-    <div class="footer-section">
-      <div class="logo">
-        <div>PHONE REPAIR</div>
-      </div>
-      <ul>
-        <li><i class="fas fa-phone-alt"></i> Tổng đài miễn phí: <strong>1800 2057</strong></li>
-        <li><i class="fas fa-phone-alt"></i> Phản ánh dịch vụ: <strong>1800 2018</strong></li>
-        <li><i class="fas fa-clock"></i> Giờ làm việc: Thứ 2 - CN, 8:00 - 21:00</li>
-        <li>
-          <button class="store-system-btn">Hệ thống cửa hàng</button>
-        </li>
-      </ul>
+    <div class="footer-container">
+        <div class="footer-section">
+            <div class="logo">
+                <div>PHONE REPAIR</div>
+            </div>
+            <ul>
+                <li><i class="fas fa-phone-alt"></i> Tổng đài miễn phí: <strong>1800 2057</strong></li>
+                <li><i class="fas fa-phone-alt"></i> Phản ánh dịch vụ: <strong>1800 2018</strong></li>
+                <li><i class="fas fa-clock"></i> Giờ làm việc: Thứ 2 - CN, 8:00 - 21:00</li>
+                <li>
+                    <button class="store-system-btn">Hệ thống cửa hàng</button>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>THÔNG TIN HỖ TRỢ</h4>
+            <ul>
+                <li>Chính sách bảo hành/Đổi trả/Vận chuyển</li>
+                <li>Chính sách bảo mật</li>
+                <li>Hình thức thanh toán</li>
+                <li>Chính sách lưu trữ thiết bị</li>
+                <li>Thông tin chủ sở hữu Website</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>ĐỒ ÁN</h4>
+            <ul>
+                <li> Duy Nhat</li>
+                <li> Nghia</li>
+                <li> Nam</li>
+            </ul>
+        </div>
+        <div class="footer-section">
+            <h4>KẾT NỐI</h4>
+            <div class="social-icons">
+                <i class="fab fa-youtube"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-pinterest"></i>
+                <i class="fab fa-tiktok"></i>
+                <i class="fab fa-instagram"></i>
+            </div>
+        </div>
     </div>
-    <div class="footer-section">
-      <h4>THÔNG TIN HỖ TRỢ</h4>
-      <ul>
-        <li>Chính sách bảo hành/Đổi trả/Vận chuyển</li>
-        <li>Chính sách bảo mật</li>
-        <li>Hình thức thanh toán</li>
-        <li>Chính sách lưu trữ thiết bị</li>
-        <li>Thông tin chủ sở hữu Website</li>
-      </ul>
+    <div class="footer-bottom">
+        <p>Công ty Cổ Phần thương mại dịch vụ NHT</p>
+        <p>GPDKKD số 0314366277 do Sở kế hoạch và Đầu tư TP. Hồ Chí Minh cấp ngày 21/04/2017</p>
+        <p>Địa chỉ: TP.HCM</p>
+        <p>Email: admin@gmail.vn</p>
     </div>
-    <div class="footer-section">
-      <h4>ĐỒ ÁN</h4>
-      <ul>
-        <li> Duy Nhat</li>
-        <li> Nghia</li>
-        <li> Nam</li>
-      </ul>
-    </div>
-    <div class="footer-section">
-      <h4>KẾT NỐI</h4>
-      <div class="social-icons">
-        <i class="fab fa-youtube"></i>
-        <i class="fab fa-facebook"></i>
-        <i class="fab fa-pinterest"></i>
-        <i class="fab fa-tiktok"></i>
-        <i class="fab fa-instagram"></i>
-      </div>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>Công ty Cổ Phần thương mại dịch vụ NHT</p>
-    <p>GPDKKD số 0314366277 do Sở kế hoạch và Đầu tư TP. Hồ Chí Minh cấp ngày 21/04/2017</p>
-    <p>Địa chỉ: TP.HCM</p>
-    <p>Email: admin@gmail.vn</p>
-  </div>
 </footer>
 </html>
